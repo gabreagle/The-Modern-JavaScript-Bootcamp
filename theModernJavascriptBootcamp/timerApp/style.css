@@ -1,0 +1,17 @@
+.timeInput {
+	width: 10rem;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50px;
+}
+
+.circle {
+	fill: transparent;
+	stroke: grey;
+	stroke-width: 10;
+}
+
+#main {
+	margin-top: 100;
+}
