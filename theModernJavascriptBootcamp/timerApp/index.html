@@ -14,17 +14,17 @@
 </head>
 <body>
     <h1 class='container-fluid'>A Timer by GS</h1>
-    <div id='main' class='container-fluid d-inline-block'>
+    <div id='main' class='container-fluid d-inline-flex justify-content-center align-items-center'>
         <div class="d-flex justify-content-center align-items-center m-0 flex-column control">
             <input id = 'duration' class='d-block border-0 justify-content-center mr-auto ml-auto' value="30">
-            <div class='d-flex justify-content-center'>
-                <button class="border-0" id = 'start'><i class="fas fa-play"></i></button>
-                <button class="border-0" id = 'pause'><i class="fas fa-pause"></i></button>        
+            <div class='d-flex justify-content-around"'>
+                <button class="border-0 mx-1" id = 'start'><i class="fas fa-play"></i></button>
+                <button class="border-0 mx-1" id = 'pause'><i class="fas fa-pause"></i></button>        
             </div>    
         </div>
 
-        <svg height = '400' width='400'>
-            <circle r = '190' cx='200' cy='200' transform="rotate(-90 200 200)" class='circle'></circle>
+        <svg >
+            <circle r = '190' cx='0' cy='200' transform="rotate(-90 100 100)" class='circle'></circle>
         </svg>
     </div>
 
