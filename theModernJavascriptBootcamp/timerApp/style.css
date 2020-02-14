@@ -1,17 +1,46 @@
-.timeInput {
-	width: 10rem;
+body {
+	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Helvetica,
+		Arial, sans-serif;
+}
+
+h1 {
 	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-	border-radius: 50px;
+	margin-bottom: 2rem;
+}
+
+* {
+	font: inherit;
+}
+
+svg {
+	height: 400px;
+	width: 400px;
+}
+
+#main {
+}
+
+#main input {
+	width: 240px;
+	text-align: center;
+	font-size: 90px;
+}
+
+#main button {
+	font-size: 36px;
+	cursor: pointer;
+}
+
+#main button:focus {
+	outline: none;
 }
 
 .circle {
 	fill: transparent;
-	stroke: grey;
-	stroke-width: 10;
+	stroke: red;
+	stroke-width: 15;
 }
 
-#main {
-	margin-top: 100;
+.control {
+	position: absolute;
 }

@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <!-- customized CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Timer</title>
 </head>
 <body>
-    <div id='main' class='container-fluid d-flex flex-column justify-content-center'>
-        <svg height = '200' width='200'>
-            <circle class='circle' r = '90' cx='100' cy='100'></circle>
-        </svg>
-        <input id = 'duration' class='d-flex justify-content-center timeInput' value="30">
-        <div class='d-flex justify-content-center'>
-            <button id = 'start'>Start</button>
-            <button id = 'pause'>Pause</button>        
+    <h1 class='container-fluid'>A Timer by GS</h1>
+    <div id='main' class='container-fluid d-inline-block'>
+        <div class="d-flex justify-content-center align-items-center m-0 flex-column control">
+            <input id = 'duration' class='d-block border-0 justify-content-center mr-auto ml-auto' value="30">
+            <div class='d-flex justify-content-center'>
+                <button class="border-0" id = 'start'><i class="fas fa-play"></i></button>
+                <button class="border-0" id = 'pause'><i class="fas fa-pause"></i></button>        
+            </div>    
         </div>
+
+        <svg height = '400' width='400'>
+            <circle r = '190' cx='200' cy='200' transform="rotate(-90 200 200)" class='circle'></circle>
+        </svg>
     </div>
 
     <!-- Optional JavaScript -->
