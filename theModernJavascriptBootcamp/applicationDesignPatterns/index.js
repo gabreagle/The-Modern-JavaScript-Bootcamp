@@ -18,15 +18,8 @@ const fetchData = async (searchTerm) => {
 const input = document.querySelector('input');
 
 // start search after 1 second pause
-let timeoutId;
 const onInput = (event) => {
-	if (timeoutId) {
-		// every input, the timeout restarts
-		clearTimeout(timeoutId);
-	}
-	timeoutId = setTimeout(() => {
-		fetchData(event.target.value);
-	}, 1000);
+	fetchData(event.target.value);
 };
 
-input.addEventListener('keypress', onInput);
+input.addEventListener('keypress', debounce(onInput, 500));
