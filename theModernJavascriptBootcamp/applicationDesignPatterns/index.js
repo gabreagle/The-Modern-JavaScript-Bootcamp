@@ -35,6 +35,11 @@ const resultsWrapper = document.querySelector('.results');
 // start search after 1 second pause
 const onInput = async (event) => {
 	const movies = await fetchData(event.target.value);
+
+	if (!movies.length) {
+		dropdown.classList.remove('is-active');
+		return;
+	}
 	// clear search result
 	resultsWrapper.innerHTML = '';
 	// active dropdown list box
@@ -54,3 +59,10 @@ const onInput = async (event) => {
 };
 
 input.addEventListener('input', debounce(onInput, 500));
+
+// close the dropdown while click somewhere else
+document.addEventListener('click', (event) => {
+	if (!root.contains(event.target)) {
+		dropdown.classList.remove('is-active');
+	}
+});
